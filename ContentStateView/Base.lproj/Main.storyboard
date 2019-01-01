@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContentStateView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-wb-BxY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y5-pZ-Rct">
+                                        <rect key="frame" x="8" y="313" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9y5-pZ-Rct" firstAttribute="leading" secondItem="gt9-wb-BxY" secondAttribute="leading" constant="8" id="idL-H7-LeK"/>
+                                    <constraint firstItem="9y5-pZ-Rct" firstAttribute="centerX" secondItem="gt9-wb-BxY" secondAttribute="centerX" id="koR-VP-HWS"/>
+                                    <constraint firstItem="9y5-pZ-Rct" firstAttribute="centerY" secondItem="gt9-wb-BxY" secondAttribute="centerY" id="ssr-xM-3Zb"/>
+                                    <constraint firstAttribute="trailing" secondItem="9y5-pZ-Rct" secondAttribute="trailing" constant="8" id="y8K-em-hxq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gt9-wb-BxY" secondAttribute="trailing" id="78u-za-eQ9"/>
+                            <constraint firstItem="gt9-wb-BxY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GeI-ys-6Dy"/>
+                            <constraint firstItem="gt9-wb-BxY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a2q-qA-LfV"/>
+                            <constraint firstItem="gt9-wb-BxY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="t1g-D8-Naz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kfl-S0-x4g"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="gt9-wb-BxY" id="mil-gZ-yLN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2144.8000000000002" y="-564.46776611694156"/>
         </scene>
     </scenes>
 </document>

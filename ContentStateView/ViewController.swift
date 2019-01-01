@@ -8,13 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
+    @IBOutlet weak var backgroundView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        super.showLoading(viewController: self, backgroundView: self.backgroundView, message: "Please wait...")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) { // change 2 to desired number of seconds
+            // Your code with delay
+            super.showData(backgroundView: self.backgroundView)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                super.showError(backgroundView: self.backgroundView, message: "Oops! something went wrong!")
+            }
+
+        }
     }
-
-
 }
+
+
 

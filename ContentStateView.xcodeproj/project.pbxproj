@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDC01A1F21DB243500DD7AB6 /* ContentStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC01A1E21DB243500DD7AB6 /* ContentStateView.swift */; };
+		DDC01A2321DB641000DD7AB6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC01A2221DB641000DD7AB6 /* BaseViewController.swift */; };
 		DDEA619221DA333000D5E662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA619121DA333000D5E662 /* AppDelegate.swift */; };
 		DDEA619421DA333000D5E662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA619321DA333000D5E662 /* ViewController.swift */; };
 		DDEA619721DA333000D5E662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEA619521DA333000D5E662 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDC01A1E21DB243500DD7AB6 /* ContentStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateView.swift; sourceTree = "<group>"; };
+		DDC01A2221DB641000DD7AB6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DDEA618E21DA333000D5E662 /* ContentStateView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentStateView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEA619121DA333000D5E662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEA619321DA333000D5E662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDC01A1D21DB240A00DD7AB6 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				DDC01A1E21DB243500DD7AB6 /* ContentStateView.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 		DDEA618521DA333000D5E662 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +66,14 @@
 		DDEA619021DA333000D5E662 /* ContentStateView */ = {
 			isa = PBXGroup;
 			children = (
+				DDC01A1D21DB240A00DD7AB6 /* States */,
 				DDEA619121DA333000D5E662 /* AppDelegate.swift */,
 				DDEA619321DA333000D5E662 /* ViewController.swift */,
 				DDEA619521DA333000D5E662 /* Main.storyboard */,
 				DDEA619821DA333100D5E662 /* Assets.xcassets */,
 				DDEA619A21DA333100D5E662 /* LaunchScreen.storyboard */,
 				DDEA619D21DA333200D5E662 /* Info.plist */,
+				DDC01A2221DB641000DD7AB6 /* BaseViewController.swift */,
 			);
 			path = ContentStateView;
 			sourceTree = "<group>";
@@ -136,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDEA619421DA333000D5E662 /* ViewController.swift in Sources */,
+				DDC01A2321DB641000DD7AB6 /* BaseViewController.swift in Sources */,
+				DDC01A1F21DB243500DD7AB6 /* ContentStateView.swift in Sources */,
 				DDEA619221DA333000D5E662 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
