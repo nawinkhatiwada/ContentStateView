@@ -14,7 +14,7 @@ class BaseViewController: UIViewController{
         super.viewDidLoad()
     }
     
-    func showLoading(viewController:ViewController, backgroundView: UIView, message: String?){
+    func showLoading(viewController:UIViewController, backgroundView: UIView, message: String?){
         backgroundView.alpha = 0
         backgroundView.isHidden = true
         self.contentState = ContentStateView(viewController: viewController)
