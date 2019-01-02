@@ -25,7 +25,7 @@ class ContentStateView{
         customUIView.translatesAutoresizingMaskIntoConstraints = false
         customUIView.leftAnchor.constraint(equalTo: view!.leftAnchor).isActive = true
         customUIView.rightAnchor.constraint(equalTo: view!.rightAnchor).isActive = true
-        customUIView.topAnchor.constraint(equalTo: view!.safeAreaLayoutGuide.topAnchor, constant:10).isActive = true
+        customUIView.topAnchor.constraint(equalTo: view!.safeAreaLayoutGuide.topAnchor, constant:0).isActive = true
         customUIView.bottomAnchor.constraint(equalTo: view!.safeAreaLayoutGuide.bottomAnchor, constant:0).isActive = true
         
         view!.addSubview(indicator)
